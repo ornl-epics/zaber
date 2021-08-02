@@ -1,0 +1,38 @@
+
+file epid_and_window.template
+{
+	pattern {S, INP, OUT, SCAN, KP, KI, KD, DRVL, DRVH, PREC}
+		{BL4A:SE:NVPID, BL4A:SE:ZABERNV:READ, BL4A:SE:ZABERNV:SP, "1 second", 1, 1, 0, -100000, 100000, 3}
+}
+
+#file PID_Simple.template
+#{
+#	pattern {S, SP, RE, OUT}
+#		{BL4A:SE:NVPID, BL4A:SE:ZABERNV:SP, BL4A:SE:ZABERNV:READ}
+#}
+
+
+file zabernv.db
+{
+pattern {S, TA, DN}
+         {BL4A, SE, ZABERNV}
+}
+
+
+file Zaber.db
+{
+pattern {S, TA, DN}
+        {BL4A, SE, Zaber}
+}
+
+
+file Alicat.db
+#AD Address
+#DT1 Type Mass flow MF
+#DT2 Type Pressure Regulator PR
+#Units
+{
+pattern {S, TA, DN, DT1, DT2, AD, UN}
+        {BL4A, SE, Alicat, MF, PR, A SLPM}
+}
+

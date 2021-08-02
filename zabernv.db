@@ -1,0 +1,19 @@
+record(ai, "$(S):$(TA):$(DN):READ"){
+  info(DESC, "Timer target value ")
+  field(EGU, "--")
+  field(PREC, "3")
+  info(archive, "Monitor, 00:01:00")
+}
+
+record(ao, "$(S):$(TA):$(DN):SP"){
+  info(DESC, "Timer target value ")
+  field(EGU, "--")
+  field(PREC, "3")
+  info(archive, "Monitor, 00:01:00")
+}
+
+
+
+
+
+
