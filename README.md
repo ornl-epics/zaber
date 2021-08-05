@@ -1,3 +1,8 @@
-# ages
+# ZABER
+EPICS Driver developed by Mariano Ruiz, zma@ornl.gov
 
-AGES Gas handling
+
+Zaber compact motor controller driver EPICS. 
+
+
+EPICS Module ASYN drvAsynIPPortConfigure 
